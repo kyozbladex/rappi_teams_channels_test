@@ -1,0 +1,14 @@
+<div *ngIf="team">
+    <span class="team-name"></span>
+    <Button class="sort">&#8597;</Button>
+    <span class="add-channel">
+        <input placeholder="Channel name"/>
+        <Button>&#8853;</Button>
+    </span>
+</div>
+<ul class="one" *ngIf="team">
+    <li *ngFor="let channel of team && team.channels; let i = index" class="channel-name">
+        <span></span>
+        <Button>&#8854;</Button>
+    </li>
+</ul>

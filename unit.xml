@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 76.0.3809 (Mac OS X 10.14.6)" package="unit" timestamp="2019-08-27T13:25:37" id="0" hostname="JOHNUN-061119.redmond.corp.microsoft.com" tests="14" errors="1" failures="14" time="0.544">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3809.100 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the Teams and Channels listing app which contains the teams" time="0.227" classname="unit.AppComponent">
+    <failure type="">Expected '
+    &lt;!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--&gt;&lt;ul _ngcontent-c1=""&gt;
+        &lt;li _ngcontent-c1=""&gt;
+            &lt;app-team-component _ngcontent-c1="" _nghost-c2=""&gt;&lt;!--bindings={}--&gt;
+&lt;!--bindings={}--&gt;&lt;/app-team-component&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;&lt;ul _ngcontent-c1=""&gt;
+        &lt;li _ngcontent-c1=""&gt;
+            &lt;app-team-component _ngcontent-c1="" _nghost-c2=""&gt;&lt;!--bindings={}--&gt;
+&lt;!--bindings={}--&gt;&lt;/app-team-component&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+' to contain 'team-name'.
+    at Object.&lt;anonymous&gt; Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/app.component.spec.ts:27:44)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent it should display correct channels name along with remove button" time="0.022" classname="unit.TeamComponent">
+    <failure type="">Expected '' to be 'Channel2'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:55:40
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel1'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:56:40
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent Add Channel button should exist and should be disabled initially" time="0.02" classname="unit.TeamComponent">
+    <failure type="">Expected false to be true.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:68:41
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent Add Channel button should not be enabled if data entered in input is empty or numeric" time="0.021" classname="unit.TeamComponent">
+    <failure type="">Expected false to be true.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:82:43
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected false to be true.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:87:45
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent Add Channel button should be enabled if data entered in input is correct and clicking on button should add the channel to the existing list" time="0.018" classname="unit.TeamComponent">
+    <failure type="">Expected '' to be 'Channel2'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:108:45
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel1'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:109:45
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel3'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:110:45
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'innerHTML' of undefined
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:111:34
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:387:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.run Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:138:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:882:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+Error: Uncaught (in promise): TypeError: Cannot read property 'innerHTML' of undefined
+    at resolvePromise Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:824:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:887:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:420:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.runTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:188:1)
+    at drainMicroTaskQueue Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:595:1)
+    at webpackJsonp.../../../../zone.js/dist/zone.js.ZoneTask.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:500:1)
+    at ZoneTask.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:485:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent Clicking on remove button should remove the channel from the list" time="0.023" classname="unit.TeamComponent">
+    <failure type="">Expected 3 to be 2.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:126:37
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel2'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:127:43
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel3'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:128:43
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent Clicking on sort button once list the channels in ascending order of names" time="0.027" classname="unit.TeamComponent">
+    <failure type="">Expected '' to be 'Channel1'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:142:43
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel2'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:143:43
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel3'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:144:43
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent Clicking on sort button twice list the channels in descending order of names" time="0.022" classname="unit.TeamComponent">
+    <failure type="">Expected '' to be 'Channel3'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:161:45
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel2'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:162:45
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel1'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:163:45
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamComponent Clicking on sort button thrice list the channels according to creation time" time="0.021" classname="unit.TeamComponent">
+    <failure type="">Expected '' to be 'Channel2'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:184:47
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel1'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:185:47
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected '' to be 'Channel3'.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-component/team-component.component.spec.ts:186:47
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamList teams and channel list should display first team by default along with required inputs and button" time="0.036" classname="unit.TeamList">
+    <failure type="">Expected null to be truthy.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:49:24
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'innerHTML' of null
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:50:23
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:387:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.run Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:138:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:882:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+Error: Uncaught (in promise): TypeError: Cannot read property 'innerHTML' of null
+    at resolvePromise Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:824:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:887:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:420:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.runTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:188:1)
+    at drainMicroTaskQueue Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:595:1)
+    at webpackJsonp.../../../../zone.js/dist/zone.js.ZoneTask.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:500:1)
+    at ZoneTask.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:485:1)
+</failure>
+  </testcase>
+  <testcase name="TeamList teams and channel list should display first channel in team by default along with required buttons" time="0.024" classname="unit.TeamList">
+    <failure type="">Expected null to be truthy.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:66:27
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">TypeError: Cannot read property 'innerHTML' of null
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:67:26
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:387:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.run Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:138:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:882:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+Error: Uncaught (in promise): TypeError: Cannot read property 'innerHTML' of null
+    at resolvePromise Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:824:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:887:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:420:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.runTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:188:1)
+    at drainMicroTaskQueue Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:595:1)
+    at webpackJsonp.../../../../zone.js/dist/zone.js.ZoneTask.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:500:1)
+    at ZoneTask.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:485:1)
+</failure>
+  </testcase>
+  <testcase name="TeamList Add Team section should exist and add button should be disabled initially" time="0.032" classname="unit.TeamList">
+    <failure type="">Expected false to be true.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:81:38
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamList Add Team button should not be enabled if data entered in input is empty or numeric" time="0.028" classname="unit.TeamList">
+    <failure type="">Expected false to be true.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:95:40
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+    <failure type="">Expected false to be true.
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:100:42
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+</failure>
+  </testcase>
+  <testcase name="TeamList Add Team button should be enabled if data entered in input is correct and clicking on button should add it to the list of teams" time="0.023" classname="unit.TeamList">
+    <failure type="">TypeError: Cannot read property 'innerHTML' of undefined
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/src/app/components/team-list/team-list.component.spec.ts:121:31
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:388:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:106:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:125:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:387:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.run Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:138:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:882:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:421:1)
+    at AsyncTestZoneSpec.webpackJsonp.../../../../zone.js/dist/async-test.js.AsyncTestZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/async-test.js:90:1)
+    at ProxyZoneSpec.webpackJsonp.../../../../zone.js/dist/proxy.js.ProxyZoneSpec.onInvokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/proxy.js:156:1)
+Error: Uncaught (in promise): TypeError: Cannot read property 'innerHTML' of undefined
+    at resolvePromise Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:824:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:887:1
+    at ZoneDelegate.webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:420:1)
+    at Zone.webpackJsonp.../../../../zone.js/dist/zone.js.Zone.runTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:188:1)
+    at drainMicroTaskQueue Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:595:1)
+    at webpackJsonp.../../../../zone.js/dist/zone.js.ZoneTask.invokeTask Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:500:1)
+    at ZoneTask.invoke Users/rakhetan/Downloads/4aa1e523556d041dfeca66535e642484/~/zone.js/dist/zone.js:485:1)
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
