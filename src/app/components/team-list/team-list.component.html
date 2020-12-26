@@ -1,7 +1,12 @@
 <div class="teams-list">
     <ul *ngFor="let team of teams; let i = index" >
         <li>
-            <app-team-component></app-team-component>
+            <app-team-component 
+            [team]="team"
+            [teamIndex]="i"
+            >
+               
+            </app-team-component>
         </li>
     </ul>
 </div>
@@ -9,6 +14,6 @@
 
 <div class="add-team">
     <b>Add Team</b>
-    <input placeholder="Team name"/>
-    <Button>&#8853;</Button>
+    <input placeholder="Team name" [(ngModel)]="teamName" (ngModelChange)="onChange()"/>
+    <Button (click)="formValidation()" [disabled]="disabled">&#8853;</Button>     
 </div>

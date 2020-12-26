@@ -1,14 +1,15 @@
 <div *ngIf="team">
-    <span class="team-name"></span>
-    <Button class="sort">&#8597;</Button>
+    <span class="team-name">{{team.name}}</span>
+    <Button class="sort" (click)="sort()">&#8597;</Button>
     <span class="add-channel">
-        <input placeholder="Channel name"/>
-        <Button>&#8853;</Button>
+        <input placeholder="Channel name" [(ngModel)]="inputChannel" (ngModelChange)="onChange()"/>
+        <Button (click)="formValidation()" [disabled]="disabled">&#8853;</Button>
     </span>
 </div>
 <ul class="one" *ngIf="team">
     <li *ngFor="let channel of team && team.channels; let i = index" class="channel-name">
-        <span></span>
-        <Button>&#8854;</Button>
+        <span>{{i}} {{channel.name}}</span>
+        <Button (click)="removeChannel($event, i)">&#8854;</Button> 
     </li>
 </ul>
+<br>
