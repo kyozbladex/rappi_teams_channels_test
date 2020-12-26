@@ -10,7 +10,7 @@ export class TeamList implements OnInit {
   teams: Team[] = [];
   component: Team;
 
-  teamName: string;
+  teamName: string = "";
 
   disabled = false;
  // @ViewChild('boton') boton;

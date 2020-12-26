@@ -15,12 +15,9 @@ export class TeamComponent implements OnInit {
   currentState: number;
 
   currentOrder: number = 0;
-
-  inputChannel: string;
-
+  inputChannel: string = "";
   disabled = false;
-  pattern = false;
-
+  //pattern = false;
   //@ViewChild('boton') boton;
 
   constructor() { 
@@ -43,7 +40,7 @@ export class TeamComponent implements OnInit {
     //let patron = /^[A-Za-z]+$/;
 
     if(this.inputChannel.match(patron)) {
-console.log("todo valido");
+//console.log("todo valido");
 this.addChannel();
 this.inputChannel = '';
    //   this.pattern = true;
@@ -51,7 +48,7 @@ this.inputChannel = '';
      console.log("todo ok"); */
    //  this.addChannel(event);
     } else {
-      console.log("solo numeros o nada");
+     // console.log("solo numeros o nada");
       
      this.inputChannel = '';
       this.disabled = true;
@@ -67,7 +64,8 @@ this.inputChannel = '';
 
   //if (this.pattern) {
     if (this.team.channels.length > 0) {
-      this.team.channels.push({name: this.inputChannel, index: this.team.channels[this.team.channels.length-1].index+1});
+      this.team.channels.push({name: this.inputChannel, index: this.team.channels.length+1});
+      //this.team.channels.push({name: this.inputChannel, index: this.team.channels[this.team.channels.length-1].index+1});
     } else {
       this.team.channels.push({name: this.inputChannel, index: 1});
     } 
@@ -101,28 +99,31 @@ this.inputChannel = '';
   //}
 
   sort() {
-    let teamArray = this.team.channels;
-    let originalArray = teamArray;
 
-    console.log("valor actual currentOrder: ", this.currentOrder);
+     let teamArray = this.team.channels;
+   // let originalArray = this.team.channels;
+
+   // console.log("valor actual currentOrder: ", this.currentOrder);
     
-
     if (this.currentOrder == 0) {
       teamArray.sort((a,b) => a.name.localeCompare(b.name));
       this.currentOrder = 1;
-      console.log(teamArray);
-      console.log("Orden ascendente: ", this.currentOrder);
+      // console.log(teamArray);
+      // console.log(this.team.channels);
+      // console.log("Orden ascendente: ", this.currentOrder);
     } else if (this.currentOrder == 1) {
       teamArray.sort((a,b) => b.name.localeCompare(a.name));
       this.currentOrder = 2;
-      console.log(teamArray);
-      console.log("Orden descendente: ", this.currentOrder);
-    } else if (this.currentOrder == 2) {
-      teamArray = originalArray;
+      // console.log(teamArray);
+      // console.log(this.team.channels);
+      // console.log("Orden descendente: ", this.currentOrder);
+    }  else if (this.currentOrder == 2) {
+      teamArray.sort((a,b) => a.index - b.index);
       this.currentOrder = 0;
-      console.log(teamArray);
-      console.log("Orden original: ", this.currentOrder);
-    }
+      // console.log(teamArray);
+      // console.log(this.team.channels);
+      // console.log("Orden original: ", this.currentOrder);
+    }  
 
   }
 
