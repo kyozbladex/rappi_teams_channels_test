@@ -13,8 +13,6 @@ export class TeamList implements OnInit {
   teamName: string = "";
 
   disabled = false;
- // @ViewChild('boton') boton;
-
   
   constructor() { 
     this.teams.push({
@@ -52,19 +50,12 @@ export class TeamList implements OnInit {
   }
 
   formValidation() {
-  //  console.log("Valor teamName: ", this.teamName);
-  //  console.log("Longitud teamName: ", this.teamName.length);
-    
-   // let numeros = /^[0-9]+$/;
-   // let nada = "";
     let patron = /[A-Za-z]+[^0-9]/ig;
     
     if (this.teamName.match(patron)) {
-    //  console.log("registro valido");
       this.addTeam();
       this.teamName = "";
     } else {
-     // console.log("hay solo numeros o nada");
       this.teamName = "";
       this.disabled = true;
     }
@@ -73,8 +64,7 @@ export class TeamList implements OnInit {
   addTeam() {
 
      this.teams.push({name: this.teamName, channels:[]});
-    // console.log(this.teams);
-    
+
   }
 }
 
